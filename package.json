@@ -1,0 +1,23 @@
+{
+	"name": "aono-hiyashi-mitarashi",
+	"version": "1.0.0",
+	"description": "HTML parser for Google Apps Script",
+	"main": "main.ts",
+	"scripts": {
+		"build": "rollup -c",
+		"dev": "rollup -c -w",
+		"test": "jest --passWithNoTests"
+	},
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^25.0.0",
+		"@rollup/plugin-node-resolve": "^15.0.0",
+		"@rollup/plugin-typescript": "^11.0.0",
+		"@types/google-apps-script": "^1.0.99",
+		"@types/jest": "^30.0.0",
+		"jest": "^30.0.5",
+		"rollup": "^3.0.0",
+		"ts-jest": "^29.4.1",
+		"tslib": "^2.8.1",
+		"typescript": "^5.0.0"
+	}
+}
