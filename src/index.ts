@@ -130,7 +130,10 @@ export function logAvailability(): void {
     }
     
     // Create a single row with timestamp and all availability data
-    const timestamp = new Date().toISOString();
+    const now = new Date();
+    const jstOffset = 9 * 60; // JST is UTC+9
+    const jstTime = new Date(now.getTime() + (jstOffset * 60 * 1000));
+    const timestamp = jstTime.toISOString().replace('Z', '+09:00');
     const rowData = [timestamp];
     
     // For each day (1-31), add status for each shop
